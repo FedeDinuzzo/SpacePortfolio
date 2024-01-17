@@ -24,7 +24,7 @@ const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
+            Senior Information Technology Auditor
           </h1>
         </motion.div>
 
@@ -33,12 +33,13 @@ const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            Providing
+            Auditing is like
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
-              the best{" "}
+              astronaut work for
+              {" "}
             </span>
-            project experience
+            the business world
           </span>
         </motion.div>
 
@@ -46,9 +47,9 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full stack developer from Argentina. Seeking perfection in
-          each line of code is what is needed to create unique projects.
-          Check out my projects and skills
+          I&apos;m a senior IT auditor from Argentina. 
+          Like an astronaut on a space mission, 
+          my job is to explore every corner of financial records and ensure accuracy through integrity and reliability.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
