@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const Encryption = () => {
   return (
-    <div className='flex flex-row relative items-center justify-center min-h-[85vh] w-full h-full'>
+    <div className='flex flex-row relative items-center justify-center mt-[-220px] min-h-[85vh] w-full h-full'>
       <div className='absolute w-auto h-auto top-0 z-[5]'>
         <motion.div
         variants={slideInFromTop}
