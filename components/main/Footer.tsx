@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+
+import React, { Suspense } from 'react'
 import {
   RxDiscordLogo,
   RxGithubLogo,
@@ -8,9 +10,24 @@ import {
 } from "react-icons/rx"
 
 import { FaYoutube } from 'react-icons/fa'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
+import Avatar from './Avatar'
+
 
 const Footer = () => {
   return (
+    <>
+    <div className="w-full h-auto fixed inset-0 z-[1000]">
+      <Canvas camera={{position: [0, 2, 5], fov: 30}}>
+        <Suspense fallback={null}>
+          <OrbitControls/>
+            <Avatar/>
+          <ambientLight intensity={2.5} />
+        </Suspense>
+      </Canvas>
+    </div>
+
     <div className='w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]'>
       <div className='w-full flex flex-col items-center justify-center m-auto'>
         <div className='w-full h-full flex flex-row items-center justify-around flex-wrap'>
@@ -66,6 +83,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
