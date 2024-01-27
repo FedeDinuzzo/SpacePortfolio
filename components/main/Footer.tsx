@@ -22,8 +22,10 @@ const Footer = () => {
       <Canvas camera={{position: [0, 2, 5], fov: 30}}>
         <Suspense fallback={null}>
           <OrbitControls/>
-            <Avatar/>
-          <ambientLight intensity={2.5} />
+          <group position-y={-1}>
+            <Avatar />
+          </group>
+          <ambientLight intensity={2} />
         </Suspense>
       </Canvas>
     </div>
